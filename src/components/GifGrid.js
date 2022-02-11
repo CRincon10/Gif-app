@@ -1,8 +1,9 @@
-import PropTypes from 'prop-types'
-import GifGridItem from './GifGridItem'
+import React from 'react'
+import {GifGridItem} from './GifGridItem'
 import { useGifFetch } from '../hooks/useGifFetch'
+import PropTypes from 'prop-types'
 
-const GifGrid = ({category}) => {
+export const GifGrid = ({category}) => {
   
     const {data:images,loading } = useGifFetch(category)
     
@@ -13,14 +14,15 @@ const GifGrid = ({category}) => {
 
         <div >
 
-            <div className='card-grid'>{
+            <div className='card-grid'>
+                {
                     images.map( gif=>(
                         <GifGridItem 
                             key={gif.id}
                             {...gif}  //mando como argimento cada una de las propiedades de forma independiente con el operador spread 
                         />
                     ))
-            }
+                }
 
             </div>
         </div>
@@ -32,7 +34,6 @@ GifGrid.propTypes = {
     category: PropTypes.any
 }
 
-export default GifGrid
 
 
 

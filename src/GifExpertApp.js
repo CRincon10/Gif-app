@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import AddCategory from './components/AddCategory';
-import GifGrid from './components/GifGrid';
+import {AddCategory} from './components/AddCategory';
+import {GifGrid} from './components/GifGrid';
 
 export const GifExpertapp = () => {
 
     const [categories, setCategories] = useState([]);
-    
+  
     
     return (
         <>
@@ -14,7 +14,7 @@ export const GifExpertapp = () => {
             <br /><br /><br />
             
             
-    
+            
             <div>
                 {
                     categories.map( serie =>( 

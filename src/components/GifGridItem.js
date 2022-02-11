@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const GifGridItem = ({title,url}) => {
+export const GifGridItem = ({title,url}) => {
     
   
     return (
@@ -19,4 +19,3 @@ GifGridItem.propTypes = {
     GifGridItem: PropTypes.any
 }
 
-export default GifGridItem
