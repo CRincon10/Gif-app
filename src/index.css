@@ -7,7 +7,7 @@ html,body{
     background-color: rgb(31, 31, 31);
     color: white;
     padding: 20px;
-    
+    height: auto;
 
 }
 
@@ -85,4 +85,37 @@ html,body{
         margin-right: 20px;
         
     }
+}
+
+
+
+@media (max-width:518px){ 
+
+    .card-grid{
+        display: block;
+        height: 3400px;
+        width: 80%;
+    
+        
+    }
+
+    .card{
+        align-content: center;
+        border: 1px solid white;
+        border-radius: 6px;
+        flex-grow: 1;
+        margin-bottom: 10px;
+        margin-right: 10px;
+        overflow: hidden;
+        width: 100%;
+        margin-left: 30px;
+        
+    }
+    #container-1{
+        width: 90%;
+        vertical-align: middle;
+        white-space: nowrap;
+        position: relative;
+      }
+
 }
